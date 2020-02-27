@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2700185 on Thu Oct 24 18:46:05 MDT 2019
+# IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
+# Start of session at: Sun Dec 29 12:54:20 2019
+# Process ID: 19948
+# Current directory: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1
+# Command line: vivado.exe -log main.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source main.tcl -notrace
+# Log file: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.vdi
+# Journal file: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source main.tcl -notrace

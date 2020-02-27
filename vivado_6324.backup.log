@@ -1,0 +1,894 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2700185 on Thu Oct 24 18:46:05 MDT 2019
+# IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
+# Start of session at: Sat Dec 28 10:36:02 2019
+# Process ID: 6324
+# Current directory: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3700 C:\Users\bayka\Google Drive\Universite\Bilgisayar\CS 223\Project\project\project.xpr
+# Log file: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/vivado.log
+# Journal file: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 804.727 ; gain = 160.086
+update_compile_order -fileset sources_1
+close [ open {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.srcs/sources_1/new/game.sv} w ]
+add_files {{C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.srcs/sources_1/new/game.sv}}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 10:46:15 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 10:46:15 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1084.727 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 47 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.091 . Memory (MB): peak = 1761.152 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.091 . Memory (MB): peak = 1761.152 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1761.152 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:28 ; elapsed = 00:00:22 . Memory (MB): peak = 1875.355 ; gain = 1029.484
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Oct 24 2019 at 19:17:01
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Oct 25 2019-04:33:05
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1925.105 ; gain = 13.727
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA0CB7A
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3138.020 ; gain = 1212.914
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close [ open {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.srcs/sources_1/new/cellular_automata.sv} w ]
+add_files {{C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.srcs/sources_1/new/cellular_automata.sv}}
+update_compile_order -fileset sources_1
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Oct 24 2019 at 19:17:01
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Oct 25 2019-04:33:05
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 3236.199 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA0CB7A
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 14:24:44 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 14:24:44 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 14:34:35 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 14:34:35 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 14:51:29 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 14:51:29 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 14:58:00 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 14:58:00 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 15:05:09 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 15:05:09 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 15:24:52 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 15:24:52 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 15:32:07 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 15:32:07 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 15:51:27 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 15:51:27 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 15:56:34 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 15:56:34 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 16:02:27 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 16:02:27 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Oct 24 2019 at 19:17:01
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Oct 25 2019-04:33:05
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 3381.445 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA0CB7A
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 17:24:50 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 17:24:50 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 17:35:52 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 17:35:52 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 18:45:11 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 18:45:11 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 18:47:31 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 18:47:32 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 18:51:03 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 18:51:03 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 18:54:01 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 18:54:01 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 19:01:35 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 19:01:35 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 19:02:48 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 19:02:48 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 19:07:44 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 19:07:44 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 19:08:57 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 19:08:57 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 19:15:13 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 19:15:13 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 19:17:03 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 19:17:03 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+reset_run impl_1
+close [ open {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.srcs/sources_1/new/debouncer.sv} w ]
+add_files {{C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.srcs/sources_1/new/debouncer.sv}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 19:25:00 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 19:25:00 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 20:11:26 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 20:11:26 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 20:13:37 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 20:13:38 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 20:22:11 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 20:22:11 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 20:31:06 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 20:31:06 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 20:38:04 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 20:38:04 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Oct 24 2019 at 19:17:01
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Oct 25 2019-04:33:05
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 3614.598 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA0CB7A
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 20:47:46 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 20:47:46 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 20:48:12 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 20:48:12 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 20:58:13 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 20:58:14 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 21:04:47 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 21:04:47 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 21:15:17 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 21:15:17 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 21:22:51 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 21:22:51 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 21:27:52 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 21:27:52 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 21:35:07 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 21:35:07 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 21:39:29 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 21:39:29 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 21:44:16 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 21:44:16 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 21:54:37 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 21:54:37 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 21:59:16 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 21:59:16 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 22:04:19 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 22:04:19 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 22:10:51 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 22:10:51 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 22:25:55 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 22:25:55 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AA0CB7A
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AB47BFA
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AB47BFA
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA0CB7A
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 22:41:38 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 22:41:38 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 22:47:17 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 22:47:17 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 22:52:51 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 22:52:51 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 22:57:13 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 22:57:35 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 22:57:35 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 23:04:28 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 23:04:28 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 23:08:18 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 23:08:18 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 23:17:16 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 23:17:16 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 23:34:21 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 23:34:21 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 23:43:56 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 23:43:56 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 23:48:03 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 23:48:03 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 23:53:54 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sat Dec 28 23:53:54 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Dec 29 00:04:30 2019] Launched synth_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/synth_1/runme.log
+[Sun Dec 29 00:04:30 2019] Launched impl_1...
+Run output will be captured here: C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bayka/Google Drive/Universite/Bilgisayar/CS 223/Project/project/project.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 29 00:09:40 2019...
